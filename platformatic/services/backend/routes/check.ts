@@ -10,16 +10,24 @@ export default async function (
     "/check",
     {
       schema: {
+        querystring: {
+          type: "object",
+          properties: { ping: { type: "string" } },
+        },
         response: {
           "200": {
             type: "object",
-            properties: { status: { type: "string" } },
+            properties: {
+              status: { type: "string" },
+              ping: { type: "string" },
+            },
+            required: ["status"],
           },
         },
       },
     },
-    async () => {
-      return { status: "OK" };
+    async ({ query }) => {
+      return { status: "OK", ping: query.ping || "" };
     }
   );
 }

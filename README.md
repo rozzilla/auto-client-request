@@ -15,3 +15,9 @@ npm run frontend
 
 npm run backend
 ```
+
+To update the frontend client (be sure that backend is running):
+
+```
+npm run update-frontend
+```
