@@ -3,8 +3,8 @@
   "version": "0.1.0",
   "dependencies": {
     "fastify": "4.27.0",
-    "@platformatic/client": "1.39.0",
-    "@platformatic/client-cli": "1.39.0",
+    "@platformatic/client": "1.40.0",
+    "@platformatic/client-cli": "1.40.0",
     "@types/node": "16.18.97",
     "@types/react": "18.3.2",
     "@types/react-dom": "18.3.0",
@@ -15,7 +15,7 @@
   },
   "scripts": {
     "start": "react-scripts start",
-    "generate": "npx platformatic client http://localhost:3042/documentation/json --name backend --folder . --full --types-only",
+    "generate": "./node_modules/.bin/plt-client http://localhost:3042/documentation/json --name backend --folder . --full --types-only",
     "build": "react-scripts build"
   },
   "eslintConfig": {

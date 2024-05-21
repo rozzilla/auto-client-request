@@ -2,8 +2,9 @@
   "name": "auto-client-request",
   "scripts": {
     "setup": "cd frontend && npm i && cd ../platformatic && npm i",
+    "backend": "cd platformatic && npm run start",
     "frontend": "cd frontend && npm run start",
     "update-frontend": "cd frontend && npm run generate",
-    "backend": "cd platformatic && npm run start"
+    "force-full-clean": "cd frontend && rm -rf node_modules && cd ../platformatic && rm -rf node_modules && cd services/backend && rm -rf dist && rm -rf node_modules"
   }
 }
