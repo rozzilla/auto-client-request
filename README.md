@@ -2,18 +2,16 @@
 
 ## How to start?
 
-Start the backend:
+Run the setup command
 
 ```
-cd platformatic
-npm i
-npm run start
+npm run setup
 ```
 
-Then, on another shell process, start the frontend:
+Then, on the separate process, run
 
 ```
-cd frontend
-npm i
-npm run start
+npm run frontend
+
+npm run backend
 ```

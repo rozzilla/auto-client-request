@@ -1,0 +1,8 @@
+{
+  "name": "auto-client-request",
+  "scripts": {
+    "setup": "cd ./frontend && npm i && cd ../platformatic && npm i",
+    "frontend": "cd frontend && npm run start",
+    "backend": "cd platformatic && npm run start"
+  }
+}
