@@ -1,9 +1,6 @@
 import { useEffect, useState } from "react";
-import { postExample, setBaseUrl } from "../../client/client";
+import { postExample } from "../../client/client";
 import { PostExampleResponseOK } from "../../client/client-types";
-import { clientUrl } from "../constant";
-
-setBaseUrl(clientUrl);
 
 export function Example() {
   const [example, setExample] = useState<PostExampleResponseOK>();

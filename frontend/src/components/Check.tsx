@@ -1,9 +1,6 @@
 import { useEffect, useState } from "react";
-import { getCheck, setBaseUrl } from "../../client/client";
+import { getCheck } from "../../client/client";
 import { GetCheckResponseOK } from "../../client/client-types";
-import { clientUrl } from "../constant";
-
-setBaseUrl(clientUrl);
 
 const getClassCheck = (
   status: GetCheckResponseOK["status"]
