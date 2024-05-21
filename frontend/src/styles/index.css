@@ -55,6 +55,12 @@ button:focus-visible {
   outline: 4px auto -webkit-focus-ring-color;
 }
 
+input {
+  font-size: 1.2em;
+  margin: 0.5em;
+  width: 200px;
+}
+
 .error {
   color: red;
   font-weight: bold;
