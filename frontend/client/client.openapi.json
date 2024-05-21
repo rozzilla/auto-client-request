@@ -86,10 +86,13 @@
                 "schema": {
                   "type": "object",
                   "properties": {
-                    "value": {
+                    "data": {
                       "type": "string"
                     }
-                  }
+                  },
+                  "required": [
+                    "data"
+                  ]
                 }
               }
             }

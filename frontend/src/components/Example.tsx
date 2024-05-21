@@ -25,7 +25,7 @@ export function Example() {
   return (
     <>
       <h2>Example</h2>
-      <h3>{example.value}</h3>
+      <h3>{example.data}</h3>
       <h3>
         <label>1st number:</label>
         <input

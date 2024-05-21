@@ -22,7 +22,7 @@ export type PostExampleRequest = {
 }
 
 export type PostExampleResponseOK = {
-  'value': string;
+  'data': string;
 }
 export type PostExampleResponses =
   PostExampleResponseOK

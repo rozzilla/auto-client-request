@@ -19,13 +19,14 @@ export default async function (fastify: FastifyInstance) {
         response: {
           "200": {
             type: "object",
-            properties: { value: { type: "string" } },
+            properties: { data: { type: "string" } },
+            required: ["data"],
           },
         },
       },
     },
     async ({ body: { num1, num2, text } }) => {
-      return { value: `hi ${text} - result ${num1 + num2}` };
+      return { data: `hi ${text} - result ${num1 + num2}` };
     }
   );
 }
