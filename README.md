@@ -5,9 +5,9 @@
 Start the backend:
 
 ```
-cd backend
+cd platformatic
 npm i
-npm run dev
+npm run start
 ```
 
 Then, on another shell process, start the frontend:

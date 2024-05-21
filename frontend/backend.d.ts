@@ -3,8 +3,7 @@ import { type GetHeadersOptions } from '@platformatic/client'
 
 declare namespace backend {
   export type Backend = {
-    getCheck(req?: GetCheckRequest): Promise<GetCheckResponses>;
-    postSafe(req?: PostSafeRequest): Promise<PostSafeResponses>;
+    getExample(req?: GetExampleRequest): Promise<GetExampleResponses>;
   }
   export interface BackendOptions {
     url: string
@@ -17,25 +16,17 @@ declare namespace backend {
     'body': T;
   }
 
-  export type GetCheckRequest = {
+  export type GetExampleRequest = {
     query?: {
-      'ping'?: string;
+      'hi'?: string;
     }
   }
 
-  export type GetCheckResponseOK = unknown
-  export type GetCheckResponses =
-    FullResponse<GetCheckResponseOK, 200>
-
-  export type PostSafeRequest = {
-    body: {
-      'body': { 'name': string; 'age': number };
-    }
+  export type GetExampleResponseOK = {
+    'hello': string;
   }
-
-  export type PostSafeResponseOK = unknown
-  export type PostSafeResponses =
-    FullResponse<PostSafeResponseOK, 200>
+  export type GetExampleResponses =
+    FullResponse<GetExampleResponseOK, 200>
 
 }
 
