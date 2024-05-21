@@ -13,7 +13,11 @@
     "logger": {
       "level": "{PLT_SERVER_LOGGER_LEVEL}"
     },
-    "cors": { "origin": ["http://localhost:5173"] }
+    "cors": {
+      "origin": {
+        "regexp": "^http://localhost.*"
+      }
+    }
   },
   "managementApi": "{PLT_MANAGEMENT_API}"
 }
