@@ -21,12 +21,11 @@ export function Check() {
   const [check, setCheck] = useState<GetCheckResponseOK>();
 
   useEffect(() => {
-    async function fetchMovies() {
+    async function fetchCheck() {
       const result = await getCheck({ ping: "pong" });
       setCheck(result);
     }
-
-    fetchMovies();
+    fetchCheck();
   }, []);
 
   if (!check) return <p>...</p>;
