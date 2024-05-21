@@ -1,11 +1,8 @@
 /// <reference path="../global.d.ts" />
-import { FastifyInstance, FastifyPluginOptions } from "fastify";
+import { FastifyInstance } from "fastify";
 import { JsonSchemaToTsProvider } from "@fastify/type-provider-json-schema-to-ts";
 
-export default async function (
-  fastify: FastifyInstance,
-  opts: FastifyPluginOptions
-) {
+export default async function (fastify: FastifyInstance) {
   fastify.withTypeProvider<JsonSchemaToTsProvider>().get(
     "/check",
     {

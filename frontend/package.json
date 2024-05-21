@@ -7,7 +7,7 @@
     "dev": "vite",
     "build": "tsc && vite build",
     "lint": "eslint . --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
-    "generate": "npx platformatic client http://127.0.0.1:3042/documentation/json --frontend --language ts --name backend",
+    "generate": "npx platformatic client http://127.0.0.1:3042/documentation/json --frontend --language ts --name client",
     "preview": "vite preview"
   },
   "dependencies": {

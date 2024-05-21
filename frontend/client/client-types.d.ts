@@ -29,10 +29,10 @@ export type PostExampleResponses =
 
 
 
-export interface Backend {
+export interface Client {
   setBaseUrl(newUrl: string) : void;
   getCheck(req?: GetCheckRequest): Promise<GetCheckResponses>;
   postExample(req?: PostExampleRequest): Promise<PostExampleResponses>;
 }
-type PlatformaticFrontendClient = Omit<Backend, 'setBaseUrl'>
+type PlatformaticFrontendClient = Omit<Client, 'setBaseUrl'>
 export default function build(url: string): PlatformaticFrontendClient

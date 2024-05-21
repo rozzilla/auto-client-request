@@ -1,9 +1,9 @@
 import { useEffect, useState } from "react";
-import { getCheck, setBaseUrl } from "../../backend/backend";
-import { GetCheckResponseOK } from "../../backend/backend-types";
-import { backendUrl } from "../constant";
+import { getCheck, setBaseUrl } from "../../client/client";
+import { GetCheckResponseOK } from "../../client/client-types";
+import { clientUrl } from "../constant";
 
-setBaseUrl(backendUrl);
+setBaseUrl(clientUrl);
 
 const getClassCheck = (
   status: GetCheckResponseOK["status"]
@@ -20,11 +20,12 @@ const getClassCheck = (
 export function Check() {
   const [check, setCheck] = useState<GetCheckResponseOK>();
 
+  async function fetchCheck() {
+    const result = await getCheck({ ping: "pong" });
+    setCheck(result);
+  }
+
   useEffect(() => {
-    async function fetchCheck() {
-      const result = await getCheck({ ping: "pong" });
-      setCheck(result);
-    }
     fetchCheck();
   }, []);
 
@@ -37,6 +38,7 @@ export function Check() {
       <h3>
         Status:
         <div className={getClassCheck(check.status)}>{check.status}</div>
+        <button onClick={fetchCheck}>UPDATE</button>
       </h3>
     </>
   );
