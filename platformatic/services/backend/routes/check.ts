@@ -18,16 +18,17 @@ export default async function (
           "200": {
             type: "object",
             properties: {
-              status: { type: "string" },
+              status: { type: "string", enum: ["OK", "KO"] },
               ping: { type: "string" },
             },
             required: ["status"],
+            additionalProperties: false,
           },
         },
       },
     },
     async ({ query }) => {
-      return { status: "OK", ping: query.ping || "" };
+      return { status: "OK" as const, ping: query.ping || "" };
     }
   );
 }
