@@ -1,5 +1,5 @@
 {
-  "name": "backend",
+  "name": "platformatic",
   "scripts": {
     "start": "platformatic start",
     "test": "borp",
