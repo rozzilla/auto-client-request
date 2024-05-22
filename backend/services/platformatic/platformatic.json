@@ -7,5 +7,12 @@
   "plugins": {
     "paths": ["./routes"],
     "typescript": "{PLT_BACKEND_TYPESCRIPT}"
+  },
+  "server": {
+    "cors": {
+      "origin": {
+        "regexp": "^http://localhost.*"
+      }
+    }
   }
 }
