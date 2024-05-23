@@ -9,12 +9,12 @@
     "build": "platformatic compile"
   },
   "devDependencies": {
-    "fastify": "^4.26.2",
-    "borp": "^0.13.0",
-    "typescript": "^5.4.2"
+    "fastify": "4.27.0",
+    "borp": "0.14.0",
+    "typescript": "5.4.5"
   },
   "dependencies": {
-    "platformatic": "^1.40.0"
+    "platformatic": "1.41.1"
   },
   "engines": {
     "node": "^18.8.0 || >=20.6.0"

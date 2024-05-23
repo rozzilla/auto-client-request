@@ -26,5 +26,5 @@ npm run update-frontend
 Try with:
 
 ```
-npm run force-full-clean && npm run setup
+npm run clean && npm run setup
 ```
