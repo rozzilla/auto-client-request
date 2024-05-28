@@ -23,7 +23,9 @@ npm run update
 
 ## Project structure
 
-This project contains a barebone and minimal mono-repo setup. The goal is to provide a demo on how you can achieve automated client requests, where every update on the `backend` is reflected on the `frontend`. For instance, with this setup, you'll see that by doing a breaking change (like removing an endpoint, making a property mandatory, etc.), the TypeScript build will fail.
+This project contains a barebone and minimal mono-repo setup.
+The goal is to provide a demo on how you can achieve automated client requests, where every update on the `backend` is reflected on the `frontend`.
+For instance, with this setup, you'll see that by doing a breaking change (like removing an endpoint, making a property mandatory, etc.), the TypeScript build will fail.
 
 ## How to handle changes?
 
