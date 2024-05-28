@@ -8,7 +8,7 @@ Run the setup command
 npm run setup
 ```
 
-Then, on separate processes, run
+Then, on separate processes, run:
 
 ```
 npm run frontend
