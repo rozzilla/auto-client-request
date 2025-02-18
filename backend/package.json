@@ -8,13 +8,8 @@
     "clean": "rm -fr ./dist && rm -rf ./*/*/dist",
     "build": "platformatic compile"
   },
-  "devDependencies": {
-    "fastify": "5.2.1",
-    "typescript": "5.7.3"
-  },
   "dependencies": {
-    "platformatic": "2.44.5",
-    "@platformatic/runtime": "2.44.5"
+    "platformatic": "2.44.5"
   },
   "engines": {
     "node": ">=20.6.0"
