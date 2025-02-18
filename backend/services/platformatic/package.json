@@ -12,7 +12,7 @@
     "typescript": "5.4.2"
   },
   "dependencies": {
-    "@platformatic/service": "1.41.1",
+    "@platformatic/service": "2.44.5",
     "@fastify/type-provider-json-schema-to-ts": "3.0.0"
   },
   "engines": {

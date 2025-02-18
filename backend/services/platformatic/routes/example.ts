@@ -1,4 +1,3 @@
-/// <reference path="../global.d.ts" />
 import { FastifyInstance } from "fastify";
 import { JsonSchemaToTsProvider } from "@fastify/type-provider-json-schema-to-ts";
 
